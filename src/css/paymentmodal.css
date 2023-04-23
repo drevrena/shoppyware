@@ -1,0 +1,71 @@
+
+/* Payment Modal */
+
+form {
+    position: relative;
+    margin: 2em;
+    margin-top: 4em;
+}
+
+.modal-pay {
+    display: block;
+    cursor: pointer;
+    width: 80%;
+    max-width: 320px;
+    padding: .5em;
+    margin: 2em auto;
+    background-color: #63c563;
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: .25em;
+}
+
+.modal-pay:hover {
+    background-color: #59bb59;
+}
+
+.modal-close {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    color: #464646;
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 24px;
+    border: none;
+    top: 8px;
+    right: 8px;
+}
+
+.payment-modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;  
+    left: 50%;
+    background-color: white;
+    border-radius: 1em;
+    z-index: 5;
+    width: 80vw;
+    min-height: 320px;
+    max-width: 480px;
+}
+
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 3;
+}
+  
+
+.payment-modal .lds-dual-ring:after {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
